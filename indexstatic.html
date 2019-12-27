@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Premium Audit App</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome JS -->
+    <link href="css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <span class="logo">
+                    <img src="Assets/logo mail.png">
+                </span>
+
+            </div>
+            <ul class="drp list-unstyled components">
+                <li class="menulist">
+                    <a href="#auditSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="img-icon">
+                            <img src="Assets/envelope-message-line-icon-outline-vector-sign-linear-style-pictogram-isolated-white-email-symbol-logo-illustration-editable-95885205 (1).jpg">
+                            <span class="left-sidebar-header">Campaigns</span>
+                        </span>
+                        <span class="down-arrow float-right">
+                            <img src="Assets/Shape.png">
+                        </span>
+                        <span class="up-arrow float-right">
+                            <img src="Assets/Shape-open.png">
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu collapse list-unstyled show" id="auditSubmenu">
+                        <li>
+                            <a href="#" class="campaignitems">
+                                <span class="img-icon">
+                                    <img src="Assets/envelope-message-line-icon-outline-vector-sign-linear-style-pictogram-isolated-white-email-symbol-logo-illustration-editable-95885205 (1).jpg">
+                                    <span class="left-sidebar-header">Campaigns</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="campaignitems">
+                                <span class="img-icon">
+                                    <img src="Assets/calendar.png">
+                                    <span class="left-sidebar-header">Templates</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="campaignitems">
+                                <span class="img-icon">
+                                    <img src="Assets/notification.png">
+                                    <span class="left-sidebar-header">Polls</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="campaignitems">
+                                <span class="img-icon">
+                                    <img src="Assets/calendar.png">
+                                    <span class="left-sidebar-header">File manager</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menulist">
+                    <a href="#masterSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="img-icon">
+                            <img src="Assets/profile_round.png">
+                            <span class="left-sidebar-header">Recipients</span>
+                        </span>
+                        <span class="down-arrow float-right">
+                            <img src="Assets/Shape.png">
+                        </span>
+                        <span class="up-arrow float-right">
+                            <img src="Assets/Shape-open.png">
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu collapse list-unstyled" id="masterSubmenu">
+                        <li>
+                            <a href="#">item</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menulist">
+                    <a href="#registerSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="img-icon">
+                            <img src="Assets/edit.png">
+                            <span class="left-sidebar-header">Reports</span>
+                        </span>
+                        <span class="down-arrow float-right">
+                            <img src="Assets/Shape.png">
+                        </span>
+                        <span class="up-arrow float-right">
+                            <img src="Assets/Shape-open.png">
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu collapse list-unstyled" id="registerSubmenu">
+                        <li>
+                            <a href="#">item</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menulist">
+                    <a href="#profileSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="img-icon">
+                            <img src="Assets/profile_round.png">
+                            <span class="left-sidebar-header">Profile</span>
+                        </span>
+                        <span class="down-arrow float-right">
+                            <img src="Assets/Shape.png">
+                        </span>
+                        <span class="up-arrow float-right">
+                            <img src="Assets/Shape-open.png">
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu collapse list-unstyled" id="profileSubmenu">
+                        <li>
+                            <a href="#">item</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menulist">
+                    <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="img-icon">
+                            <img src="Assets/crown.png">
+                            <span class="left-sidebar-header">Admin</span>
+                        </span>
+                        <span class="down-arrow float-right">
+                            <img src="Assets/Shape.png">
+                        </span>
+                        <span class="up-arrow float-right">
+                            <img src="Assets/Shape-open.png">
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu collapse list-unstyled" id="adminSubmenu">
+                        <li>
+                            <a href="#">item</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <label class="remarks">Customers:</label>
+            <button class="demobtn">Mailkit Demo </button>
+            <div class="dropdown">
+                <button class="btn" style="background: white; width: 35px; height: 33px;">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="topNav">
+                <div class="topNavContent wrapper">
+                    <ul class="leftNavSection">
+                        <img src="Assets/fullscreen.png">
+                    </ul>
+                    <ul class="rightNavSection">
+
+                        <li class="dropdownOptions">
+                            <ul class="dropdownOptionsBody">
+                                <li>
+                                    <a href="javascript:void(0)">Change Password</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="optionDropdown">
+
+                            <img class="lock" src="Assets/lock2.png">
+
+                        </li>
+
+                        <li class="notificationIcon">
+                            <img src="Assets/save.png">
+                        </li>
+                        <li class="profileUser">
+                            <img src="Assets/profile_round.png">
+                        </li>
+                        <li class="profileUser">
+                            <img src="Assets/excel.png">
+                        </li>
+                        <li class="persona">
+                            <img src="Assets/flag.png">
+                        </li>
+                        <li class="userName">
+                            <span class="nameperson">Sbrt_Sugata
+                                <br/> Mailkit demo</span>
+
+                        </li>
+                        <li class="persona">
+                            <img src="Assets/persona.png">
+                        </li>
+                        </li>
+                </div>
+                </ul>
+
+            </nav>
+            <div class="breadcrumbsSection">
+                <span class="button-checkbox">
+                    <input type="checkbox" class="checkboxsm" checked />
+                    <button type="button" class="btn act" data-color="danger">Active</button>
+                </span>
+                <span>
+                    <button type="button" class="btn red" data-color="danger">inactive</button>
+                    <button type="button" class="btn red" data-color="danger">Disabled</button>
+                    <button type="button" class="btn red" data-color="danger">Deleted</button>
+                    <button type="button" class="btn red" data-color="danger">All</button>
+                    <button type="button" class="btn red right" data-color="danger">Add campaign</button>
+
+                </span>
+                <p class="statustext">STATUS | DATE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NAME|SENDER|SUBJECT</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col first">
+                            <span>
+                                <img src="Assets/circlecal.png">
+                            </span>
+                            <span class="datetext">27-nov-2019</span>
+                            <br/>
+                            <span class="timetext">3-30PM</span>
+
+                        </div>
+                        <div class="col-6">
+                            <span>
+                                <img src="Assets/message.jpg">
+                            </span>
+                            <span>
+                                <img src="Assets/filter.png">
+                            </span>
+                            <span class="dndtext">+ DnD Test (Jakub)</span>
+                            <br/>
+                            <span class="subject">From: mailkit Demo(helpdesk@mailkit.com)</span>
+                            <span class="subject matter">Subject : The cool test/ the other one..</span>
+                            <button type="button" class="addbtn">Add tag</button>
+
+                        </div>
+
+                        <div class="col third">
+                            <span>
+                                <img src="Assets/plus.png">
+                            </span>
+                            <span>
+                                <img src="Assets/arrow_Collapse.png">
+                            </span>
+                            <span>
+                                <img src="Assets/search.png">
+                            </span>
+                            <span>
+                                <img src="Assets/analysis.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container items">
+                    <div class="row">
+                        <div class="col first">
+                            <span>
+                                <img src="Assets/circlecal.png">
+                            </span>
+                            <span class="datetext">27-nov-2019</span>
+                            <br/>
+                            <span class="timetext">3-30PM</span>
+
+                        </div>
+                        <div class="col-6">
+                            <span>
+                                <img src="Assets/message.jpg">
+                            </span>
+                            <span>
+                                <img src="Assets/filter.png">
+                            </span>
+                            <span class="dndtext"> aaaa</span>
+                            <br/>
+                            <span class="subject">From: mailkit Demo(helpdesk@mailkit.com)</span>
+                            <span class="subject matter">Subject : The cool test/ the other one..</span>
+                            <button type="button" class="addbtn" style="background:#aace09;">Test2</button>
+                            <button type="button" class="addbtn" style="background:#06d645;">Test3</button>
+                            <button type="button" class="addbtn" style="background:#f3a052;">Test3A</button>
+                            <button type="button" class="addbtn" style="background:#b39cf1;">Test5</button>
+                            <button type="button" class="addbtn" style="background:#9c9bd1;">Email</button>
+                            <button type="button" class="addbtn">Add tag</button>
+                        </div>
+                        <div class="col third">
+                            <span>
+                                <img src="Assets/plus.png">
+                            </span>
+                            <span>
+                                <img src="Assets/arrow_Collapse.png">
+                            </span>
+                            <span>
+                                <img src="Assets/search.png">
+                            </span>
+                            <span>
+                                <img src="Assets/analysis.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container items">
+                    <div class="row">
+                        <div class="col first">
+                            <span>
+                                <img src="Assets/circlecal.png">
+                            </span>
+                            <span class="datetext">27-nov-2019</span>
+                            <br/>
+                            <span class="timetext">3-30PM</span>
+
+                        </div>
+                        <div class="col-6">
+                            <span>
+                                <img src="Assets/message.jpg">
+                            </span>
+                            <span>
+                                <img src="Assets/filter.png">
+                            </span>
+                            <span class="dndtext">ABB DnD Test Sugata</span>
+                            <br/>
+                            <span class="subject">From: mailkit Demo(helpdesk@mailkit.com)</span>
+                            <span class="subject matter">Subject : The cool test/ the other one..</span>
+                            <button type="button" class="addbtn" style="background:#b397f3;">Sourav Test</button>
+                            <button type="button" class="addbtn">Add tag</button>
+
+                        </div>
+                        <div class="col third">
+                            <span>
+                                <img src="Assets/plus.png">
+                            </span>
+                            <span>
+                                <img src="Assets/arrow_Collapse.png">
+                            </span>
+                            <span>
+                                <img src="Assets/search.png">
+                            </span>
+                            <span>
+                                <img src="Assets/analysis.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container items">
+                    <div class="row">
+                        <div class="col first">
+                            <span>
+                                <img src="Assets/circlecal.png">
+                            </span>
+                            <span class="datetext">27-nov-2019</span>
+                            <br/>
+                            <span class="timetext">3-30PM</span>
+
+                        </div>
+                        <div class="col-6">
+                            <span>
+                                <img src="Assets/message.jpg">
+                            </span>
+                            <span>
+                                <img src="Assets/filter.png">
+                            </span>
+                            <span class="dndtext">Api created test</span>
+                            <br/>
+                            <span class="subject">From: mailkit Demo(helpdesk@mailkit.com)</span>
+                            <span class="subject matter">Subject : The cool test/ the other one..</span>
+                            <button type="button" class="addbtn">Add tag</button>
+
+                        </div>
+                        <div class="col third">
+                            <span>
+                                <img src="Assets/plus.png">
+                            </span>
+                            <span>
+                                <img src="Assets/arrow_Collapse.png">
+                            </span>
+                            <span>
+                                <img src="Assets/search.png">
+                            </span>
+                            <span>
+                                <img src="Assets/analysis.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $("#button").kendoButton();
+            var button = $("#button").data("kendoButton");
+            button.enable(false);
+            button.enable(true);
+        </script>
+        <script src="js/script.js"></script>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/kendo.all.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+
+</body>
+
+</html>
